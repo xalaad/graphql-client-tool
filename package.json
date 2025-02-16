@@ -1,0 +1,41 @@
+{
+  "name": "graphql-client-tool",
+  "description": "A flexible GraphQL client supporting both synchronous and asynchronous operations",
+  "author": "Alaa El-Daour",
+  "keywords": [
+    "graphql",
+    "client",
+    "typescript",
+    "javascript",
+    "sync",
+    "async",
+    "api"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaa-daour/graphql-client-tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alaa-daour/graphql-client-tool/issues"
+  },
+  "homepage": "https://github.com/alaa-daour/graphql-client-tool#readme"
+}
